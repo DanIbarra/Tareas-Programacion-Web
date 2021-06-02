@@ -1,1 +1,11 @@
-<p>dashboard works!</p>
+<h1 class="text-center">Top Heroes</h1>
+<div class="row text-center">
+    <div *ngFor="let Heroe of heroes| slice:0:4; let i= index" class="text-center col-3">
+        <div class="card" >
+            <div class="card-body">
+              <p>{{Heroe.name}}</p>
+            </div>
+          </div>
+    </div>
+</div>
+
