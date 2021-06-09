@@ -1,0 +1,13 @@
+<h1>Lista de Contactos</h1>
+<hr>
+<div class="row text-center m-5">
+    <div *ngFor= "let Contacto of contactos; let i=index" class="col">
+        <div class="card" style="width: 18.%;">
+            <div class="card-body">
+              <h5 class="card-title">{{Contacto.apellidos}}, {{Contacto.nombre}} ({{Contacto.genero}})</h5>
+              <p class="card-text">{{Contacto.descripcion}}</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+</div>
